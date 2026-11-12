@@ -1,0 +1,44 @@
+# ---- Python runtime / caches ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# ---- Model weights (228 MB single file, exceeds GitHub's 100 MB limit) ----
+assets/models/
+*.onnx
+*.part
+assets/models/manifest.json
+
+# ---- Local run artefacts and reports ----
+_spike/
+_publish/
+.workbuddy/
+acceptance-report.json
+build-report.json
+config.json
+*.log
+*.tmp
+
+# ---- Credential / session caches: NEVER commit these ----
+.session-cache.json
+*session*cache*.json
+credentials*.json
+.env
+.env.*
+*.pem
+*.key
+*token*.json
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
